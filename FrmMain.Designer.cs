@@ -121,26 +121,26 @@ namespace Idezetgyujtemeny
             // tsmiSzerzo
             // 
             this.tsmiSzerzo.Name = "tsmiSzerzo";
-            this.tsmiSzerzo.Size = new System.Drawing.Size(180, 24);
+            this.tsmiSzerzo.Size = new System.Drawing.Size(119, 24);
             this.tsmiSzerzo.Text = "Szerző";
             this.tsmiSzerzo.Click += new System.EventHandler(this.TsmiSzerzo_Click);
             // 
             // tsmiTema
             // 
             this.tsmiTema.Name = "tsmiTema";
-            this.tsmiTema.Size = new System.Drawing.Size(180, 24);
+            this.tsmiTema.Size = new System.Drawing.Size(119, 24);
             this.tsmiTema.Text = "Téma";
             // 
             // tsmiForras
             // 
             this.tsmiForras.Name = "tsmiForras";
-            this.tsmiForras.Size = new System.Drawing.Size(180, 24);
+            this.tsmiForras.Size = new System.Drawing.Size(119, 24);
             this.tsmiForras.Text = "Forrás";
             // 
             // tsmiIdezet
             // 
             this.tsmiIdezet.Name = "tsmiIdezet";
-            this.tsmiIdezet.Size = new System.Drawing.Size(180, 24);
+            this.tsmiIdezet.Size = new System.Drawing.Size(119, 24);
             this.tsmiIdezet.Text = "Idézet";
             // 
             // tsmiKereses
@@ -304,7 +304,7 @@ namespace Idezetgyujtemeny
             this.MainMenuStrip = this.msMain;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMain";
-            this.Text = "FrmMain";
+            this.Text = "Idézetgyűjtemény";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.msMain.ResumeLayout(false);
             this.msMain.PerformLayout();

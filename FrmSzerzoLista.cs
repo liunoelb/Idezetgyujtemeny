@@ -14,16 +14,17 @@ namespace Idezetgyujtemeny
     public partial class FrmSzerzoLista : Form
     {
         public FrmSzerzo FrmSzerzo { get; set; } = null;
-        public FrmSzerzoLista()
+        public FrmSzerzoLista(FrmSzerzo frmSzerzo)
         {
+            FrmSzerzo = frmSzerzo;
             InitializeComponent();
             this.Icon = Properties.Resources.author;
         }
 
         private void FrmSzerzoLista_Load(object sender, EventArgs e)
-        {
-            FillDGV();
-        }
+            => FillDGV();
+        private void TbSzures_TextChanged(object sender, EventArgs e)
+            => FillDGV();
 
         private void FillDGV()
         {
@@ -43,14 +44,11 @@ namespace Idezetgyujtemeny
             }
         }
 
-        private void TbSzures_TextChanged(object sender, EventArgs e)
-        {
-            FillDGV();
-        }
-
         private void DgvSzerzok_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            FrmSzerzo.
+            FrmSzerzo.tbId.Text = dgvSzerzok[0, e.RowIndex].Value.ToString();
+            FrmSzerzo.tbNev.Text = dgvSzerzok[1, e.RowIndex].Value.ToString();
+            this.Dispose();
         }
     }
 }
